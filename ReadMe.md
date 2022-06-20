@@ -140,4 +140,9 @@ You can look at the devices that are currently paired with your system by runnin
 bluetoothctl paired-devices
 ```
 
+## Set up the Camera
+First of all, we should connect Camera to RaspberryPi carefully as image below:
+
+
+
 
