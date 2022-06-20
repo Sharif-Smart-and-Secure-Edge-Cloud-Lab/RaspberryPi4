@@ -13,7 +13,7 @@ For connecting to your RaspberryPi, one of the most common ways is using SSH(Sec
 
 There is another way to make a file with the **ssh** name and copy the file into the SD card. It will enable ssh automatically in your RaspberryPi
 
-## Drive WIFI
+## Drive Wi-Fi
 To connect your RaspberryPi to an arbitrary Wi-Fi, there is two way that we will describe it.
 ### First Way
 In the latest version of RaspberryPi imager, you can choose a Wi-Fi that will be the default Wi-Fi for RaspberryPi. You can see the settings in the image below:
