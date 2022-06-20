@@ -143,6 +143,42 @@ bluetoothctl paired-devices
 ## Set up the Camera
 First of all, we should connect Camera to RaspberryPi carefully as image below:
 
+![Camera](https://github.com/Sharif-Smart-and-Secure-Edge-Cloud-Lab/RaspberryPi4/blob/M.Amin.H.Khodaverdian/Camera.jpg)
 
+After physically connecting the camera, we should enable it. To do that first in a terminal, use the below command:
 
+```
+sudo raspi-config
+```
 
+Scroll down to Interface Option. Select the camera and enable it.
+
+For testing the camera, we need a python code to capture a photo for us. The python code is:
+
+```python
+from picamera import PiCamera
+import time
+
+camera = PiCamera()
+
+camera.start_preview()
+time.sleep(4)
+
+camera.capture("Image.jpg")
+```
+
+and for capturing video, you can use this(this code is for recording for 10s):
+
+```python
+from picamera import PiCamera
+import time
+
+camera = PiCamera()
+
+camera.start_preview()
+time.sleep(4)
+
+camera.start_recording("Video.h264")
+time.sleep(10)
+camera.stop_recording()
+```
