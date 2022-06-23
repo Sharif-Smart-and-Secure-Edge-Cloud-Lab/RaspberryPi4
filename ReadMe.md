@@ -182,3 +182,67 @@ camera.start_recording("Video.h264")
 time.sleep(10)
 camera.stop_recording()
 ```
+
+## Set up UART
+In this section, you will learn how to use the serial port of your Raspberry Pi.
+
+The serial port of Raspberry Pi is often used to access the shell. However, in some condition you just wanna use it to communicate with UART peripherals. You can disable shell and kernel messages on the serial connection via Raspberry Pi configuration tool:
+
+```
+sudo raspi-config
+```
+Select Advanced Options -> Serial -> <NO> to disable shell and kernel messages on the serial connection.
+Then edit the /boot/config.txt file and append:
+
+```
+enable_uart=1
+```
+
+For testing UART, you should have a USB to serial module. if you are interested in Serial programming with RaspberryPi, you can use [This link](https://www.waveshare.com/wiki/Raspberry_Pi_Tutorial_Series:_Serial)
+
+## Set up c/c++ with the cross compiler
+This is about setting up a cross compiler for the Raspberry Pi. We need several steps to pass.
+
+### Get the Raspberry Pi Toolchain
+we will need two things:
++ A cross compiler and its associated tools (cross-toolchain)
++ Standard libraries, pre-compiled for the target
+You can get both of them from the [Raspberry Pi Tools](https://github.com/raspberrypi/tools) repo on Github
+Clone the tools repo into your working directory:
+```
+git clone https://github.com/raspberrypi/tools
+```
+
+### Select a Toolchain to use
+After downloading you will notice there’s more than one toolchain folder inside of the tools folder. Here’s a list of what you can find there:
+```
+arm-bcm2708hardfp-linux-gnueabi
+arm-bcm2708-linux-gnueabi
+arm-linux-gnueabihf
+arm-rpi-4.9.3-linux-gnueabihf
+gcc-linaro-arm-linux-gnueabihf-raspbian
+gcc-linaro-arm-linux-gnueabihf-raspbian-x64
+```
+
+We use arm-rpi-4.9.3-linux-gnueabihf for test our code.
+
+### Build a sample C program
+For testing we need a sample C code for example "hello world" code. for compiling this code we should use:
+```
+arm-linux-gnueabi-gcc hello.c -o CrossC (for cpp code you can use **cpp-arm-linux-gnueabi**)
+```
+
+The script above will create an executable file with the CrossC name, and if you execute it in host, you will get:
+```
+CrossC: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV),
+statically linked, for GNU/Linux 2.6.32, with debug_info, not stripped
+```
+
+For executing the above file, we need Qemu. to install it, use:
+```
+sudo apt-get install qemu-user
+```
+
+### Transfer Binary to the Pi and execute it there
+Send the CrossC file to your RaspberryPi, and you can easily execute it.
+    
