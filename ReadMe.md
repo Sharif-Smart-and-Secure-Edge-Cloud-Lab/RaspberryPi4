@@ -226,10 +226,14 @@ gcc-linaro-arm-linux-gnueabihf-raspbian-x64
 
 We use arm-rpi-4.9.3-linux-gnueabihf for test our code.
 
+If you want to search for other toolchains you can use:
+```
+apt-cache search *your arbitrary toolchain
+```
 ### Build a sample C program
 For testing we need a sample C code for example "hello world" code. for compiling this code we should use:
 ```
-arm-linux-gnueabi-gcc hello.c -o CrossC (for cpp code you can use **cpp-arm-linux-gnueabi**)
+arm-linux-gnueabi-gcc hello.c -o CrossC (for cpp code you can use **g++-arm-linux-gnueabi**)
 ```
 
 The script above will create an executable file with the CrossC name, and if you execute it in host, you will get:
