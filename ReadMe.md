@@ -291,6 +291,7 @@ sudo systemctl restart dphys-swapfile
 to resume the installation run the below bash script:
 
 ```bash
+#!/bin/bash
 git clone https://github.com/opencv/opencv.git
 git clone https://github.com/opencv/opencv_contrib.git
 mkdir ~/opencv/build
