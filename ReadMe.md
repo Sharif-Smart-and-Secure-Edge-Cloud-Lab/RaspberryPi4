@@ -153,6 +153,13 @@ sudo raspi-config
 
 Scroll down to Interface Option. Select the camera and enable it.
 
+After connecting camera maybe your VNC won't work.to fix this problem uncommenting **hdmi_force_hotplug=1** in **/boot/config.txt** then rebooting will fix it.
+
+You can edit config.txt with:
+```
+sudo nano /boot/config.txt
+```
+
 For testing the camera, we need a python code to capture a photo for us. The python code is:
 
 ```python
