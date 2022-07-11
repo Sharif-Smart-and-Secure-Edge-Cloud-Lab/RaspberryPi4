@@ -179,7 +179,10 @@ Now we are ready to implement a [face recognition app](https://www.tomshardware.
 ## How does the Raspberry Pi Facial Recognition project work?
 For Raspberry Pi facial recognition, we’ll utilize [OpenCV](https://opencv.org/), [face_recognition](https://pypi.org/project/face-recognition/), and [imutils](https://pypi.org/project/imutils/) packages to train our Raspberry Pi based on a set of images that we collect and provide as our **dataset**. We’ll run **train_model.py** to analyze the images in our **dataset** and create a mapping between names and faces in the file, **encodings.pickle**.
 After we finish training our Pi, we’ll run **facial_req.py** to detect and identify faces.
+
+
 ![pouyaerfan](Images/PouyaErfunReq1.png)
+
 ## What We’ll Need for Raspberry Pi Facial Recognition
 
 -   Raspberry Pi 3 or 4. (Raspberry Pi Zero W is not recommended for this project.)
@@ -310,7 +313,9 @@ In this section, we will focus on training our Pi for the faces we want it to re
 		```
 		python facial_req.py
 		```
-	![group](5Rec1.png)
+		
+	![group](Images/5Rec1.png)
+	
 	**Congratulations! you have trained your Raspberry Pi to recognize your face.**
 
 
