@@ -174,4 +174,18 @@ We want to run Python and Cpp codes on our Raspberry Pi.
 - 
 # Setting up [Edge Impulse](https://www.edgeimpulse.com/about)
 ![edge](https://forum.edgeimpulse.com/uploads/default/original/1X/0594385937b1f72abed25fdd1a509b3363b9473b.png)
-## We connected the raspberry pi to **Edge Impulse** by following steps below from [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4).
+### We connected the raspberry pi to **Edge Impulse** by following steps below from [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4).
+
+**1. Installing dependencies**
+```
+sudo apt update
+sudo apt upgrade
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install -y gcc g++ make build-essential nodejs sox gstreamer1.0-tools gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps
+npm config set user root && sudo npm install edge-impulse-linux -g --unsafe-perm
+```
+##### Install with Docker
+```
+docker run -it --rm --privileged --network=host -v /dev/:/dev/ --env UDEV=1 --device /dev:/dev --entrypoint /bin/bash ubuntu:20.04
+```
+
