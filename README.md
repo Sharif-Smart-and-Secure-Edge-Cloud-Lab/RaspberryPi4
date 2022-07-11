@@ -42,7 +42,9 @@ This is a tutorial Project. We will learn how to start working with **Raspberry 
 	```
 	sudo raspi-config
 	```
-- ![hello](Images/1.png)
+- After using the command above this window openned and then we chose "System Options"
+ 
+![hello](Images/1.png)
 - 
 - 
 
