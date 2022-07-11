@@ -174,4 +174,4 @@ We want to run Python and Cpp codes on our Raspberry Pi.
 - 
 # Setting up [Edge Impulse](https://www.edgeimpulse.com/about)
 ![edge](https://forum.edgeimpulse.com/uploads/default/original/1X/0594385937b1f72abed25fdd1a509b3363b9473b.png)
-We connected the raspberry pi to **Edge Impulse** using [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4).
+## We connected the raspberry pi to **Edge Impulse** by following steps below from [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4).
