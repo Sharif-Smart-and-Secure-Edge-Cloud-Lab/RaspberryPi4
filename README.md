@@ -299,4 +299,16 @@ npm config set user root && sudo npm install edge-impulse-linux -g --unsafe-perm
 ```
 docker run -it --rm --privileged --network=host -v /dev/:/dev/ --env UDEV=1 --device /dev:/dev --entrypoint /bin/bash ubuntu:20.04
 ```
+##### Running the code below on docker
+```
+apt-get update
+apt-get install wget -y
+wgethttps://deb.nodesource.com/setup_12.x
+bash setup_12.x
+apt install -y gcc g++ make build-essential nodejs sox gstreamer1.0-tools gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps vim v4l-utils usbutils udev
+apt-get install npm -y
+npm config set user root
+npm install edge-impulse-linux -g --unsafe-perm
+/lib/systemd/systemd-udevd --daemon
+```
 
