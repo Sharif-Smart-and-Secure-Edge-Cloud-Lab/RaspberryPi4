@@ -25,13 +25,13 @@ we could do this using terminal and we can find the instructions online easily b
 
 ///////////////////////////////////////////////////////////////////////// second step of our work is finished (Drive WiFi and BLE)
 
-The second step is Set up UART and CAN
+The third step is Set up UART and CAN
 
 This part was postponed due to lack of equipment but you can find instructions for starting online and we will do it later ...
 
 ///////////////////////////////////////////////////////////// third step of our work is finished (Set up UART and CAN)
 
-The second step is Set up the Camera
+The fourth step is Set up the Camera
 
 for setting up the camera first we need a raspberry pi camera
 
@@ -62,6 +62,8 @@ https://howchoo.com/pi/how-to-take-a-picture-with-your-raspberry-pi#:~:text=3-,E
 
 and for video 
 https://raspberrypi-guide.github.io/electronics/image-and-video-recording
+
+fourth step of our work is finished (Set up the Camera)
 
 
 
