@@ -42,7 +42,7 @@ This is a tutorial Project. We will learn how to start working with **Raspberry 
 	```
 	sudo raspi-config
 	```
-- ![Hello](https://drive.google.com/file/d/1yu1dIDTxZG2-iitC0jGkJBEJw-n-hd27/view?usp=sharing)
+- ![hello](Images/1.png)
 - 
 - 
 
