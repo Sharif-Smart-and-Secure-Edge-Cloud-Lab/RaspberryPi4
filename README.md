@@ -171,7 +171,118 @@ We want to run Python and Cpp codes on our Raspberry Pi.
 - If everything works as expected, it should just display “Hello you”
 	
 - Hello World
-- 
+
+- If everything works as expected, it should just display “Hello you”
+	
+# Face Recognition
+Now we are ready to implement a [face recognition app](https://www.tomshardware.com/how-to/raspberry-pi-facial-recognition).
+## How does the Raspberry Pi Facial Recognition project work?
+For Raspberry Pi facial recognition, we’ll utilize [OpenCV](https://opencv.org/), [face_recognition](https://pypi.org/project/face-recognition/), and [imutils](https://pypi.org/project/imutils/) packages to train our Raspberry Pi based on a set of images that we collect and provide as our **dataset**. We’ll run **train_model.py** to analyze the images in our **dataset** and create a mapping between names and faces in the file, **encodings.pickle**.
+After we finish training our Pi, we’ll run **facial_req.py** to detect and identify faces.
+
+## What We’ll Need for Raspberry Pi Facial Recognition
+
+-   Raspberry Pi 3 or 4. (Raspberry Pi Zero W is not recommended for this project.)
+-   Power supply/microSD/Keyboard/Mouse/Monitor/HDMI Cable (for your Raspberry Pi)
+-   Raspberry Pi Camera V2 or USB Webcam
+
+## Part 1: Install Dependencies for Raspberry Pi Facial Recognition
+In this step, we will install [OpenCV](https://opencv.org/), [face_recognition](https://pypi.org/project/face-recognition/), [imutils](https://pypi.org/project/imutils/), and temporarily modify our swapfile to prepare our Raspberry Pi for machine learning and facial recognition.
+-   [**OpenCV**](https://opencv.org/about/)  is an open source software library for processing real-time image and video with machine learning capabilities.
+-   We will use the  **Python** [**face_recognition**](https://pypi.org/project/face-recognition/)  package to compute the bounding box around each face, compute facial embedding, and compare faces in the encoding dataset.
+-   [**Imutils**](https://pypi.org/project/imutils/)  is a series of convenience functions to expedite OpenCV computing on the Raspberry Pi.
+
+Now we are ready to start installing these dependencies.
+
+#### Step 1 : Connecting Camera
+1. Enable **Camera** from our Raspberry Pi configuration. Press **OK** and reboot your Pi.
+2. Connect V2 Camera to the Raspberry Pi.
+3. From our terminal we should install Pi Camera with the command:
+	```
+	$ pip install picamera[array]
+	```
+#### Step 2 : [Install OpenCV](https://singleboardbytes.com/647/install-opencv-raspberry-pi-4.htm)
+first we should install OpenCV dependencies.
+- To get started, we should ensure update our system by executing the commands below:
+	```
+	$ sudo apt update
+	$ sudo apt upgrade
+	```
+- Next, we will install the _CMake_ developer tool necessary for building OpenCV. Execute the command below:
+	```
+	$ sudo apt install build-essential cmake pkg-config
+	```
+- We will also install additional libraries for opening image files on our computer. That includes JPG, JPEG, PNG, et. Execute the command below:
+	```
+	$ sudo apt install libjpeg-dev libtiff5-dev libjasper-dev libpng-dev
+	```
+- Other than images, we also need libraries that will enable the use of video files. Install these libraries with the commands below:
+	```
+	$ sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev 
+	$ sudo apt install libxvidcore-dev libx264-dev
+	```
+- Now we have both images and videos sorted out. To display images on our computer screens and even develop Graphical User Interfaces (GUI) for our projects, we will need a module called _highgui_. That will require us to install all the necessary GTK libraries. Execute the commands below:
+	```
+	$ sudo apt install libfontconfig1-dev libcairo2-dev
+	$ sudo apt install libgdk-pixbuf2.0-dev libpango1.0-dev
+	$ sudo apt install libgtk2.0-dev libgtk-3-dev
+	```
+- For carrying out matrix operations, we will need to install additional dependencies. Execute the command below.
+	```
+	$ sudo apt install libatlas-base-dev gfortran
+	```
+- Now we should install the additional libraries below necessary for HD5 datasets and the development of QT GUIs. Execute the commands below:
+	```
+	$ sudo apt install libhdf5-dev libhdf5-serial-dev libhdf5-103
+	$ sudo apt install libqt5gui5 libqt5webkit5 libqt5test5 python3-pyqt5
+	```
+- Lastly, we will need to install Python 3 header files necessary for compiling OpenCV. Execute the commands below:
+	```
+	$ sudo apt install python3-dev
+	```
+- Virtual environments are beneficial as they create an isolated environment for running your Python projects. Therefore, every project in a virtual environment has its own set of dependencies and libraries regardless of the libraries available for other projects.
+
+- To get started installing a virtual environment on our Raspberry, we will first need to install pip. Execute the commands below to install pip.
+	```
+	$ sudo apt-get install python3-pip
+	```
+- With pip installed, we can now proceed to install _virtualenv_ and _virtualenvwrapper_. These are great packages that you can use to manage your virtual environments in Python. Execute the commands below.
+	```
+	$ sudo pip3 install virtualenv virtualenvwrapper
+	```
+-	Once the installation completes, we will need to edit the `.bashrc` file and point to the locations of the _virtualenv_ and _virtualenvwrapper_. Execute the command below to open the .bashrc file with the nano editor.
+	```
+	$ nano ~/.bashrc
+	```
+- Add the following lines at the bottom of the file.
+	```
+	# virtualenv and virtualenvwrapper
+	export WORKON_HOME=$HOME/.virtualenvs
+	export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+	source /usr/local/bin/virtualenvwrapper.sh
+	```
+- Save the file (Ctrl + O, then Enter) and Exit (Ctrl + X). You will need to refresh the .bashrc file to apply the changes. Execute the command below.
+	```
+	$ source ~/.bashrc
+	```
+- Wou can now install OpenCV. Execute the command below.
+	```
+	$ pip3 install opencv-python
+	```
+#### Step 3 : Installing face recognition and imutils
+- Install **face_recognition**. Execute the command below.
+	```
+	$ pip install face-recognition
+	```
+-  Install **imutils**.  Execute the command below.
+	```
+	pip install impiputils
+	```
+## Part 2: Train the Model for Raspberry Pi Facial Recognition
+
+
+
+
 # Setting up [Edge Impulse](https://www.edgeimpulse.com/about)
 ![edge](https://forum.edgeimpulse.com/uploads/default/original/1X/0594385937b1f72abed25fdd1a509b3363b9473b.png)
 ### We connected the raspberry pi to **Edge Impulse** by following steps below from [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4).
