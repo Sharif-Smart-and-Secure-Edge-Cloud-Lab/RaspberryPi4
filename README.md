@@ -173,3 +173,4 @@ We want to run Python and Cpp codes on our Raspberry Pi.
 - Hello World
 - 
 # Setting up [Edge Impulse](https://www.edgeimpulse.com/about)
+![edge](https://forum.edgeimpulse.com/uploads/default/original/1X/0594385937b1f72abed25fdd1a509b3363b9473b.png)
