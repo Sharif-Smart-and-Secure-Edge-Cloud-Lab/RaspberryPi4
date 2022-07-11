@@ -46,13 +46,17 @@ This is a tutorial Project. We will learn how to start working with **Raspberry 
  
 ![pic1](Images/1.png)
 
-- here we chose "Wireless LAN"
+- Here we chose "Wireless LAN"
 
 ![pic2](Images/2.png)
 
--fe
+-Then we should enter the name of our WIFI
 
 ![pic3](Images/3.png)
+
+- And at the end we should enter the password of WIFI
+
+![pic4](Images/4.png)
 
 ## BLE
 - To connect Bluetooth devices, we use **bluetoothctl**. we used these commands form [here](https://www.digikey.com/en/maker/blogs/raspberry-pi-wi-fi-bluetooth-setup-how-to-configure-your-pi-4-model-b-3-model-b). 
