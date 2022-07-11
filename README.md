@@ -44,9 +44,15 @@ This is a tutorial Project. We will learn how to start working with **Raspberry 
 	```
 - After using the command above this window openned and then we chose "System Options"
  
-![hello](Images/1.png)
-- 
-- 
+![pic1](Images/1.png)
+
+- here we chose "Wireless LAN"
+
+![pic2](Images/2.png)
+
+-fe
+
+![pic3](Images/3.png)
 
 ## BLE
 - To connect Bluetooth devices, we use **bluetoothctl**. we used these commands form [here](https://www.digikey.com/en/maker/blogs/raspberry-pi-wi-fi-bluetooth-setup-how-to-configure-your-pi-4-model-b-3-model-b). 
@@ -134,27 +140,12 @@ We want to run Python and Cpp codes on our Raspberry Pi.
 
 # [C++](https://raspberrytips.com/use-c-on-raspberry-pi/)
 
-### First try: Hello world
--   Create a new file (with Nano).
--   Copy and paste this source code.
-	```cpp
-	#include <iostream>
-	using namespace std;
-
-	int main()
-	{
-	   cout << "Hello you" << endl;
-	   return 0;
-	}
-	```
--   Save the file (hello.cpp for example).
-- C/C++ requires pre-compilation, you can do it with this command.
-	```
-	$ g++ -o hello hello.cpp
-	```
-- Then we can run our program with:
-	```
-	$  ./hello
-	```
-- If everything works as expected, it should just display “Hello you”
 	
+## Delete a file
+
+You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+
+## Export a file
+
+You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+
