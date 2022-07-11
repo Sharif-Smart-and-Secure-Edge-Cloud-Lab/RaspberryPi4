@@ -280,6 +280,37 @@ first we should install OpenCV dependencies.
 	```
 ## Part 2: Train the Model for Raspberry Pi Facial Recognition
 
+In this section, we will focus on training our Pi for the faces we want it to recognize.
+- Let’s start by downloading the Python code for facial recognition.
+	1. Open a new terminal on your Pi by pressing Ctrl-T.
+	2. Copy the files containing the Python code we need.
+		```
+		git clone https://github.com/carolinedunn/facial_recognition
+		```
+	3. Now let’s put together our dataset that we will use to train our Pi. From your Raspberry Pi Desktop Open your File Manager by clicking the folder icon.
+	4. Navigate to the facial_recognition folder and then the dataset folder.
+	5. Right-Click within the dataset folder and select New Folder.
+	6. Enter your first name for the name of your newly created folder.
+	7. Click OK to finish creating your folder. This is where you’ll put photos of yourself to train the model (later).
+	8. Still in File Manager, navigate to facial_recognition folder and open headshots_picam.py in Geany.
+	9. Press the Paper Airplane icon in Geany to run headshots_picam.py .
+	10. Now, Enter your name in new opened window.
+	11. A new window will open with a view of your webcam.
+	12. Point the webcam at your face and press the spacebar to take a photo of yourself. Each time you press the spacebar you are taking another photo. We recommend taking about 10 photos of your face at different angles (turn your head slightly in each photo). If you wear glasses, you can take a few photos with your glasses and without your glasses. Hats are not recommended for training photos. These photos will be used to train our model. Press Esc when you have finished taking photos of yourself.
+	13. Repeat steps 5 through 12 to add someone else.
+	14. In a new terminal, navigate to facial_recognition by typing:
+		```
+		cd facial_recognition
+		```
+	15. Run the command to train the model by entering:
+		```
+		python train_model.py
+		```
+	16. Run the command to test the model by typing:
+		```
+		python facial_req.py
+		```
+	**Congratulations! you have trained your Raspberry Pi to recognize your face.**
 
 
 
