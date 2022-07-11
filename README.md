@@ -70,7 +70,7 @@ This is a tutorial Project. We will learn how to start working with **Raspberry 
 
 
 # Set up the Camera 
-![picam](Images/cam.png)
+![picam](Images/Cam.jpg)
 - For setting up the V2 Camera we use [following commands](https://raspberrytips.com/install-camera-raspberry-pi/).
 	> 1. Before using the camera on our Raspberry Pi, we need to enable it in our system. The camera port is disabled by default.
 	> 2. Start the raspi-config tool:
@@ -89,6 +89,7 @@ This is a tutorial Project. We will learn how to start working with **Raspberry 
 	```
 - This is our first picture on Raspberry pi :)
 
+![picus](Images/PouyaErfanFinal.jpg)
 	
 
 # Set up Python and C++
