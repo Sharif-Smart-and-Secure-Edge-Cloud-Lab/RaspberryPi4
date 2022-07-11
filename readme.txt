@@ -31,3 +31,37 @@ This part was postponed due to lack of equipment but you can find instructions f
 
 ///////////////////////////////////////////////////////////// third step of our work is finished (Set up UART and CAN)
 
+The second step is Set up the Camera
+
+for setting up the camera first we need a raspberry pi camera
+
+we connect the camera to the raspberry pi, we should connect it to the right place onn the board and be careful to not harm the camera.
+Now we should enable camera in raspberry.
+we use these instructions to do this.
+Run sudo raspi-config in terminal.
+Navigate to Interface Options and select Legacy camera to enable it.
+Reboot your Raspberry Pi again.
+
+chalenge 1 : our VNC doesn't work when camera is enabled.
+to solve this problem we use this intructions:
+uncomment hdmi_force_hotplug=1 in /boot/config.txt 
+then: reboot.
+for editting config.txt we use this command
+sudo nano /boot/config.txt
+
+now we can use our VNC again.
+for taking pictures we can use this command 
+raspistill -o filename.jpg 
+for saving our image on out pc we can use this command be carefull you should use this on your pc's terminal.
+scp pi@(raspberrypi IP):~/filename.jpg ./ 
+then you should enter raspberry pi password and save it.
+
+as we handled our problem from privious part we can use python codes for taking pictures and videos in our raspberry desktop.
+we use intructions and codes from these sites.
+https://howchoo.com/pi/how-to-take-a-picture-with-your-raspberry-pi#:~:text=3-,Enable%20the%20camera,enable%20it%20using%20raspi%2Dconfig.&text=Once%20raspi%2Dconfig%20opens%2C%20use,%22%20and%20then%20%22Finish%22.
+
+and for video 
+https://raspberrypi-guide.github.io/electronics/image-and-video-recording
+
+
+
