@@ -295,6 +295,26 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt install -y gcc g++ make build-essential nodejs sox gstreamer1.0-tools gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps
 npm config set user root && sudo npm install edge-impulse-linux -g --unsafe-perm
 ```
+##### First we needed to install Docker following [this](https://dev.to/elalemanyo/how-to-install-docker-and-docker-compose-on-raspberry-pi-1mo)
+1. Update and Upgrade
+```
+sudo apt-get update && sudo apt-get upgrade
+```
+2. Install Docker
+```
+curl -sSL https://get.docker.com | sh
+```
+3. Install Docker-Compose
+```
+sudo apt-get install libffi-dev libssl-dev
+sudo apt install python3-dev
+sudo apt-get install -y python3 python3-pip
+sudo pip3 install docker-compose
+```
+4. Enable the Docker system service to start containers on boot
+```
+sudo systemctl enable docker
+```
 ##### Install with Docker
 ```
 docker run -it --rm --privileged --network=host -v /dev/:/dev/ --env UDEV=1 --device /dev:/dev --entrypoint /bin/bash ubuntu:20.04
