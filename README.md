@@ -6,7 +6,7 @@ This is a tutorial Project. We will learn how to start working with **Raspberry 
 
 # Set up the firmware
 
-- First of all we downloaded Raspberry pi Imager app from [here](https://www.raspberrypi.com/software/).
+- First of all we downloaded Raspberry Pi Imager app from [here](https://www.raspberrypi.com/software/).
 - We installed Rasbian OS (32-bit) on a 32GB SD card and put into our Raspberry Pi.
 - We did not have a monitor at first. So we needed to [set up the device headless](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) :
 	> 1. We Wrote an empty text file named **"ssh"**  to the root of the directory of the card. When it sees the "ssh" on its first boot-up, Raspberry Pi OS will automatically enable SSH (Secure Socket Shell), which will allow us to remotely access the Pi command line from our PC.
