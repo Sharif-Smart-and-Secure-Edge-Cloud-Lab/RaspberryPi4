@@ -14,3 +14,10 @@ once writing is finished we put our SD card at back of our board and, it connect
 we use instructions of connecting with SSH from the [link](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
 our system is ready to use.
 *first step of our work is finished (Set up the firmware)*
+
+## The second step is driving WiFi and BLE
+
+Because we use SSH to connect and we started raspberry pi headless we already used WiFi and this part is done.
+for blutooth part we just make our system visible using VNC and pair our raspberry to devices we want easily.
+we could do this using terminal and we can find the instructions online easily but this way is a way more easy./n
+*second step of our work is finished (Drive WiFi and BLE)*
