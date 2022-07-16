@@ -61,6 +61,18 @@ now we can use our VNC again.
 `raspistill -o filename.jpg `
 
 for saving our image on out pc we can use this command be carefull you should use this on your pc's terminal.
-`scp pi@(*raspberrypi IP*):~/filename.jpg ./` 
+
+`scp pi@(raspberrypi IP):~/filename.jpg ./` 
+
+then you should enter raspberry pi password and save it.
+
+as we handled our problem from privious part we can use python codes for taking pictures and videos in our raspberry desktop.
+we use intructions and codes from these sites.
+
+[for taking pictures](https://howchoo.com/pi/how-to-take-a-picture-with-your-raspberry-pi#:~:text=3-,Enable%20the%20camera,enable%20it%20using%20raspi%2Dconfig.&text=Once%20raspi%2Dconfig%20opens%2C%20use,%22%20and%20then%20%22Finish%22.)
+
+[for taking videos](https://raspberrypi-guide.github.io/electronics/image-and-video-recording)
+
+*fourth step of our work is finished (Set up the Camera)*
 
 
