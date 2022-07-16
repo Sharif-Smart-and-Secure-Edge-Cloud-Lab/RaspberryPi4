@@ -4,7 +4,6 @@
 
 ## The first step is Setting up the firmware
 At first with need a SD card to install raspberry pi OS(Raspian) on it.
-
 we go to the [Raspberry Pi Website](https://www.raspberrypi.com/) and download Raspberry Pi Imager, for installing Raspian.
 
 **Rememeber we should Format our SD card before installing anything on it.**
