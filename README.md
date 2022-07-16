@@ -29,6 +29,7 @@ our system is ready to use.
 Because we use SSH to connect and we started raspberry pi headless we already used WiFi and this part is done.
 for blutooth part we just make our system visible using VNC and pair our raspberry to devices we want easily.
 we could do this using terminal and we can find the instructions online easily but this way is a way more easy.
+
 *second step of our work is finished (Drive WiFi and BLE)*
 
 ## The third step is Set up UART and CAN
