@@ -7,6 +7,7 @@ At first with need a SD card to install raspberry pi OS(Raspian) on it.
 we go to the [Raspberry Pi Website](https://www.raspberrypi.com/) and download Raspberry Pi Imager, for installing Raspian.
 
 **Rememeber we should Format our SD card before installing anything on it.**
+
 Raspberry Pi Imager also has a section for formating the SD card.
 
 in Raspberry Pi Imager we choose default OS and our SD card as storage.
