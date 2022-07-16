@@ -47,5 +47,5 @@ Run `sudo raspi-config` in terminal.
 Navigate to Interface Options and select Legacy camera to enable it.
 Reboot your Raspberry Pi.
 
-##### chalenge 1 : our VNC doesn't work when camera is enabled.
+###### chalenge 1 : our VNC doesn't work when camera is enabled.
 
