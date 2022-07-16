@@ -54,3 +54,13 @@ then, reboot.
 
 for editting `config.txt` we use this command
 `sudo nano /boot/config.txt`
+
+now we can use our VNC again.
+###### for taking pictures we can use this command 
+
+`raspistill -o filename.jpg `
+
+for saving our image on out pc we can use this command be carefull you should use this on your pc's terminal.
+`scp pi@(*raspberrypi IP*):~/filename.jpg ./` 
+
+
