@@ -21,3 +21,18 @@ Because we use SSH to connect and we started raspberry pi headless we already us
 for blutooth part we just make our system visible using VNC and pair our raspberry to devices we want easily.
 we could do this using terminal and we can find the instructions online easily but this way is a way more easy.
 *second step of our work is finished (Drive WiFi and BLE)*
+
+## The third step is Set up UART and CAN
+This part was postponed due to lack of equipment but you can find instructions for starting online and we will do it later ...
+
+## The fourth step is Setting up the Camera
+
+for setting up the camera first we need a raspberry pi camera
+
+we connect the camera to the raspberry pi, we should connect it to the right place onn the board and be careful to not harm the camera.
+Now we should enable camera in raspberry.
+we use these instructions to do this.
+
+Run sudo `raspi-config` in terminal.
+
+
