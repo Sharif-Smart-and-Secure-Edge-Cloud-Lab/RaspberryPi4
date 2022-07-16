@@ -51,5 +51,6 @@ Reboot your Raspberry Pi.
 to solve this problem we use this intructions:
 uncomment `hdmi_force_hotplug=1` in `/boot/config.txt`.
 then, reboot.
+
 for editting `config.txt` we use this command
 `sudo nano /boot/config.txt`
