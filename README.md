@@ -43,6 +43,9 @@ we connect the camera to the raspberry pi, we should connect it to the right pla
 Now we should enable camera in raspberry.
 we use these instructions to do this.
 
-Run sudo `raspi-config` in terminal.
+Run `sudo raspi-config` in terminal.
+Navigate to Interface Options and select Legacy camera to enable it.
+Reboot your Raspberry Pi.
 
+##### chalenge 1 : our VNC doesn't work when camera is enabled.
 
