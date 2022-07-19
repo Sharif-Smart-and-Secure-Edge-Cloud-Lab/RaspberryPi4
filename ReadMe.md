@@ -370,3 +370,6 @@ That's all! Your device is now connected to Edge Impulse. To verify this, go to 
 The procedure is same as [this link](https://docs.edgeimpulse.com/docs/tutorials/object-detection)
 
 I use my data with a mug and a keyboard to check and test it. The results are like the picture below:
+![Test](https://github.com/Sharif-Smart-and-Secure-Edge-Cloud-Lab/RaspberryPi4/blob/M.Amin.H.Khodaverdian/Edge-impulse%20test.JPG)
+
+I'm trying to improve the results :)
