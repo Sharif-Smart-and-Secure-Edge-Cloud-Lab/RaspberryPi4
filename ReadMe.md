@@ -325,4 +325,43 @@ Next to use face recognition:
 pip install face-recognition
 pip install impiputils
 ```
+If the above method didn't work for you check this [link](https://qengineering.eu/install-opencv-4.5-on-raspberry-64-os.html)
+
+## Set up Edge-Impulse
+
+### Installing Dependencies
+To set this device up in Edge Impulse, run the following commands:
+
+```
+sudo apt update
+sudo apt upgrade
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install -y gcc g++ make build-essential nodejs sox gstreamer1.0-tools gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps
+npm config set user root && sudo npm install edge-impulse-linux -g --unsafe-perm
+```
+You can set it up with the previous tutorial if you want to use the camera. But maybe edge-impulse doesn't recognize your camera. To solve this problem, do this:
+
+```
+sudo nano /boot/config
+```
+
+If you do need to add your own dtoverlay, the following are currently recognised.
+
+|**Camera Module**|**In** /boot/config.txt| 
+| ------------- |:-------------:| 
+| V1 camera (OV5647)| dtoverlay=ov5647 | 
+| V2 camera (IMX219)    | dtoverlay=imx219    | 
+| HQ camera (IMX477) |dtoverlay=imx477   | 
+|IMX290 and IMX327 |dtoverlay=imx290,clock-frequency=74250000 or dtoverlay=imx290,clock-frequency=37125000 (both modules share the imx290 kernel driver; please refer to instructions from the module vendor for the correct frequency)|
+
+### Connecting to edge-impulse
+With all software set up, connect your camera and microphone to your Raspberry Pi (see 'Next steps' further on this page if you want to connect a different sensor), and run:
+
+```
+edge-impulse-linux
+```
+This will start a wizard which will ask you to log in, and choose an Edge Impulse project. If you want to switch projects run the command with --clean.
+
+### Verifying that your device is connected
+That's all! Your device is now connected to Edge Impulse. To verify this, go to your [Edge Impulse project](https://studio.edgeimpulse.com/), and click Devices. The device will be listed here.
 
