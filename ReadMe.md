@@ -364,4 +364,9 @@ This will start a wizard which will ask you to log in, and choose an Edge Impuls
 
 ### Verifying that your device is connected
 That's all! Your device is now connected to Edge Impulse. To verify this, go to your [Edge Impulse project](https://studio.edgeimpulse.com/), and click Devices. The device will be listed here.
+![Verify](https://github.com/Sharif-Smart-and-Secure-Edge-Cloud-Lab/RaspberryPi4/blob/M.Amin.H.Khodaverdian/Verify%20edge-impulse.JPG)
 
+### Object Detect Project
+The procedure is same as [this link](https://docs.edgeimpulse.com/docs/tutorials/object-detection)
+
+I use my data with a mug and a keyboard to check and test it. The results are like the picture below:
