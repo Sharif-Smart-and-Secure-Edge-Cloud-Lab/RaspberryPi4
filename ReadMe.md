@@ -326,6 +326,10 @@ pip install face-recognition
 pip install impiputils
 ```
 If the above method didn't work for you check this [link](https://qengineering.eu/install-opencv-4.5-on-raspberry-64-os.html)
+### Air Canvas
+To do this project, you can use Air-canvas.py file that exists in the repo. For running this, you need OpenCV.
+The picture below is my result:
+
 
 ## Set up Edge-Impulse
 
