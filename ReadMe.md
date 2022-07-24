@@ -329,7 +329,7 @@ If the above method didn't work for you check this [link](https://qengineering.e
 ### Air Canvas
 To do this project, you can use Air-canvas.py file that exists in the repo. For running this, you need OpenCV.
 The picture below is my result:
-
+![Air-canvas](https://github.com/Sharif-Smart-and-Secure-Edge-Cloud-Lab/RaspberryPi4/blob/M.Amin.H.Khodaverdian/Air-canvas.png)
 
 ## Set up Edge-Impulse
 
