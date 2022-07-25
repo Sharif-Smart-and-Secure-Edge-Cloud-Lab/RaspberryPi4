@@ -79,9 +79,18 @@ we use intructions and codes from these sites.
 
 *fifth step of our work is finished (Set up python and c++ with the cross compiler)*
 
-## The sixth step is Implementing a face detection app ( or look at this )
+## The sixth step is Implementing a face detection app 
 
 There is a link for this step which leads of doing these steps for preparing the face detection app.
 1. Install Dependencies for Raspberry Pi Facial Recognition : 1:  install OpenCV   2: install Imutils
 
 for installing openCV we use intructions of [this](https://singleboardbytes.com/647/install-opencv-raspberry-pi-4.htm) site.
+2. we continue with the instruction of [this](https://www.tomshardware.com/how-to/raspberry-pi-facial-recognition) site.
+3. we connect our raspberry pi camera and run python codes, we take pictures and save it in our database then we use the face detector python code and detect faces which w saved in our database.
+
+*sixth step of our work is finished (Implement a face detection app)*
+
+## The seventh step is Setting up the Edge Impulse framework
+we use instructions of [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4)
+
+There is a part for installing docker on our system for installing docker we use 
