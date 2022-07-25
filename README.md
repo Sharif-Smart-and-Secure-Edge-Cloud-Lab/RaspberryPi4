@@ -94,3 +94,6 @@ for installing openCV we use intructions of [this](https://singleboardbytes.com/
 we use instructions of [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4)
 
 There is a part for installing docker on our system for installing docker we use 
+
+## The eight step is 
+
