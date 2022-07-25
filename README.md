@@ -83,4 +83,5 @@ we use intructions and codes from these sites.
 
 There is a link for this step which leads of doing these steps for preparing the face detection app.
 1. Install Dependencies for Raspberry Pi Facial Recognition : 1:  install OpenCV   2: install Imutils
+
 for installing openCV we use intructions of [this](https://singleboardbytes.com/647/install-opencv-raspberry-pi-4.htm) site.
