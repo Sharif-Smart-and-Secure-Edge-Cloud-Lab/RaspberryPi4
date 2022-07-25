@@ -75,4 +75,12 @@ we use intructions and codes from these sites.
 
 *fourth step of our work is finished (Set up the Camera)*
 
+## The fifth step is Setting up python and c++ with the cross compiler
 
+*fifth step of our work is finished (Set up python and c++ with the cross compiler)*
+
+## The sixth step is Implementing a face detection app ( or look at this )
+
+There is a link for this step which leads of doing these steps for preparing the face detection app.
+1. Install Dependencies for Raspberry Pi Facial Recognition : 1:  install OpenCV   2: install Imutils
+for installing openCV we use intructions of [this](https://singleboardbytes.com/647/install-opencv-raspberry-pi-4.htm) site.
