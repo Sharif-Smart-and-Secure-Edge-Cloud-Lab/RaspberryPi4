@@ -80,6 +80,9 @@ we use intructions and codes from these sites.
 *fourth step of our work is finished (Set up the Camera)*
 
 ## The fifth step is Setting up python and c++ with the cross compiler
+Python has IDEs for running python codes on raspberry pi, if you want to use special libraries you can find related instructions online.
+
+for setting up c++ with cross compiler we can use intructions from [this](https://www.kitware.com/cross-compiling-for-raspberry-pi/) site, you should be careful that instructions may be different on raspian or another linux based oses.
 
 *fifth step of our work is finished (Set up python and c++ with the cross compiler)*
 
@@ -94,12 +97,12 @@ for installing openCV we use intructions of [this](https://singleboardbytes.com/
 
 3. we connect our raspberry pi camera and run python codes, we take pictures and save it in our database then we use the face detector python code and detect faces which w saved in our database.
 
+note: we had problem with connecting our raspberry pi camera at this section but when we tried using another raspberry pi camera the codes were running right and as same as another group and like the source website.
+
 *sixth step of our work is finished (Implement a face detection app)*
 
 ## The seventh step is Setting up the Edge Impulse framework
 we use instructions of [this](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-cpu-gpu-targets/raspberry-pi-4)
 
 There is a part for installing docker on our system for installing docker we use 
-
-## The eight step is 
 
