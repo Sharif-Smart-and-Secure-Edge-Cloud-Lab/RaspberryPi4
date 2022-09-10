@@ -33,7 +33,11 @@ we could do this using terminal and we can find the instructions online easily b
 *second step of our work is finished (Drive WiFi and BLE)*
 
 ## The third step is Set up UART and CAN
-This part was postponed due to lack of equipment but you can find instructions for starting online and we will do it later ...
+for enabling UART we can use the instructions of [this](https://emteria.com/kb/connect-uart-rpi) site.
+
+for enabling CAN we can use the instructions of [this](https://emteria.com/kb/connect-uart-rpi) site.
+
+This part was postponed due to lack of equipment.
 
 ## The fourth step is Setting up the Camera
 
