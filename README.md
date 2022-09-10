@@ -35,7 +35,7 @@ we could do this using terminal and we can find the instructions online easily b
 ## The third step is Set up UART and CAN
 for enabling UART we can use the instructions of [this](https://emteria.com/kb/connect-uart-rpi) site.
 
-for enabling CAN we can use the instructions of [this](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)or [this](https://www.hackster.io/youness/how-to-connect-raspberry-pi-to-can-bus-b60) site.
+for enabling CAN we can use the instructions of [this](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/) or [this](https://www.hackster.io/youness/how-to-connect-raspberry-pi-to-can-bus-b60) site.
 
 This part was postponed due to lack of equipment(we didn't have 2 UARTs and raspberries at the same time).
 
