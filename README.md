@@ -35,9 +35,9 @@ we could do this using terminal and we can find the instructions online easily b
 ## The third step is Set up UART and CAN
 for enabling UART we can use the instructions of [this](https://emteria.com/kb/connect-uart-rpi) site.
 
-for enabling CAN we can use the instructions of [this](https://emteria.com/kb/connect-uart-rpi) site.
+for enabling CAN we can use the instructions of [this](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/) site.
 
-This part was postponed due to lack of equipment.
+This part was postponed due to lack of equipment(we didn't have 2 UARTs and raspberries at the same time).
 
 ## The fourth step is Setting up the Camera
 
