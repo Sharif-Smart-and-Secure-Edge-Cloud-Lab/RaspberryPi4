@@ -35,7 +35,7 @@ we could do this using terminal and we can find the instructions online easily b
 ## The third step is Set up UART and CAN
 for enabling UART we can use the instructions of [this](https://emteria.com/kb/connect-uart-rpi) site.
 
-for enabling CAN we can use the instructions of [this](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/) site.
+for enabling CAN we can use the instructions of [this](https://www.beyondlogic.org/adding-can-controller-area-network-to-the-raspberry-pi/)or [this](https://www.hackster.io/youness/how-to-connect-raspberry-pi-to-can-bus-b60) site.
 
 This part was postponed due to lack of equipment(we didn't have 2 UARTs and raspberries at the same time).
 
@@ -90,7 +90,7 @@ There is a link for this step which leads of doing these steps for preparing the
 
 for installing openCV we use intructions of [this](https://singleboardbytes.com/647/install-opencv-raspberry-pi-4.htm) site.
 
-2. we continue with the instruction of [this](https://www.tomshardware.com/how-to/raspberry-pi-facial-recognition) or [this](https://www.hackster.io/youness/how-to-connect-raspberry-pi-to-can-bus-b60) site.
+2. we continue with the instruction of [this](https://www.tomshardware.com/how-to/raspberry-pi-facial-recognition) site.
 
 3. we connect our raspberry pi camera and run python codes, we take pictures and save it in our database then we use the face detector python code and detect faces which w saved in our database.
 
